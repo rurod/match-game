@@ -5,13 +5,13 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.io.IOException;
 
-public class AllumetteGame implements Runnable {
+public class MatchGame implements Runnable {
 
 	private Socket s = null;
 	private InputStream is = null;
 	private OutputStream os = null;
 
-	public AllumetteGame(Socket s) {
+	public MatchGame(Socket s) {
 		this.s = s;
 	}
 

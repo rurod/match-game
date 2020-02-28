@@ -4,9 +4,9 @@ import java.net.ServerSocket;
 import java.net.Socket;
 import java.io.IOException;
 
-import server.AllumetteGame;
+import server.MatchGame;
 
-public class AllumetteServer {
+public class MatchServer {
 
 	public static void main(String[] args) {
 		ServerSocket ss = null;
@@ -15,7 +15,7 @@ public class AllumetteServer {
 			ss = new ServerSocket(12345);
 			System.out.println("[LOG] - Server started - Waiting for connections ...");
 			while (true) {
-				AllumetteGame ag = new AllumetteGame(ss.accept());
+				MatchGame mg = new MatchGame(ss.accept());
 				Thread t = new Thread(ag);
 				t.start();
 				System.out.println("[LOG] - A connection has been made - Thread created");

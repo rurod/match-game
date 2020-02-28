@@ -5,7 +5,7 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.io.IOException;
 
-public class AllumetteClient {
+public class MatchClient {
 
 	public static void main(String[] args) {
 		Socket s = null;
